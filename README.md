@@ -11,6 +11,7 @@ The specification includes:
 | Version | Revision | Date       |
 | ------- | :------: | ---------- |
 | 1.0     | A        | 2020-12-07 |
+| 1.1     | B        | 2021-03-12 |
 
 ## Appendices
 
