@@ -1,0 +1,217 @@
+{
+  "name": "WFF 1.4 Metadata Schema",
+  "classes": {
+    "tile": {
+      "properties": {
+        "gpm::adjustment_params": {
+          "name": "Possible adjustment to gpm::position",
+          "type": "ARRAY",
+          "componentType": "FLOAT64",
+          "componentCount": 3,
+          "default": [0, 0, 0],
+          "optional": true,
+          "semantic": "GPM_ADJUSTMENT_PARAMS"
+        },
+        "gpm::covariance_matrix": {
+          "name": "The predicted accuracy of the surface at the point described by gpm:position",
+          "type": "ARRAY",
+          "componentType": "FLOAT64",
+          "componentCount": 9,
+          "optional": true,
+          "semantic": "GPM_COVARIANCE_MATRIX"
+        },
+        "gpm::id": {
+          "name": "A unique identifier for the provided gpm triplet of data",
+          "type": "STRING",
+          "optional": true,
+          "semantic": "ID"
+        },
+        "gpm::position": {
+          "name": "The position of the anchor point",
+          "type": "ARRAY",
+          "componentType": "FLOAT64",
+          "componentCount": 3,
+          "optional": true,
+          "semantic": "GPM_POSITION"
+        },
+        "max_height": {
+          "name": "Maximum Tile Height",
+          "type": "FLOAT32",
+          "optional": true,
+          "semantic": "TILE_MAXIMUM_HEIGHT"
+        },
+        "min_height": {
+          "name": "Minimum Tile Height",
+          "type": "FLOAT32",
+          "optional": true,
+          "semantic": "TILE_MINIMUM_HEIGHT"
+        },
+        "texture_resolution": {
+          "name": "Estimated Texture Resolution",
+          "type": "FLOAT32",
+          "optional": true,
+          "semantic": "MAXAR_TEXTURE_RESOLUTION"
+        },
+      }
+    },
+    "tileset": {
+      "properties": {
+        "capture_platform": {
+          "name": "Capture Platform",
+          "type": "STRING",
+          "optional": true
+        },
+        "capture_sensor": {
+          "name": "Capture Sensor",
+          "type": "STRING",
+          "optional": true
+        },
+        "content_type": {
+          "name": "Content Type",
+          "type": "STRING",
+          "default": "MESH",
+          "optional": true
+        },
+        "controlled_by": {
+          "name": "Controlling DoD office",
+          "type": "STRING",
+          "optional": true
+        },
+        "created": {
+          "name": "Created date",
+          "type": "STRING",
+          "optional": true
+        },
+        "distribution": {
+          "name": "Distribution",
+          "type": "STRING",
+          "default": "UNDECLARED",
+          "optional": true
+        },
+        "distribution_date": {
+          "name": "The date of production",
+          "type": "STRING",
+          "optional": true
+        },
+        "distribution_statement": {
+          "name": "Distribution Statement",
+          "type": "STRING",
+          "default": "Undeclared",
+          "optional": true
+        },
+        "geometry_model": {
+          "name": "Geometry Model",
+          "type": "STRING",
+          "default": "SURFACE",
+          "optional": true
+        },
+        "gpm::interp_params": {
+          "name": "GPM Interpolation parameters",
+          "type": "ARRAY",
+          "componentType": "FLOAT64",
+          "componentCount": 2,
+          "optional": true,
+          "semantic": "GPM_INTERP_PARAMS"
+        },
+        "gpm::spdcf_params": {
+          "name": "GPM SPDCF function parameters",
+          "type": "ARRAY",
+          "componentType": "FLOAT64",
+          "componentCount": 4,
+          "optional": true,
+          "semantic": "GPM_SPDCF_PARAMS"
+        },
+        "gpm::version": {
+          "name": "GPM version",
+          "type": "STRING",
+          "optional": true
+        },
+        "id": {
+          "name": "Privider Specific dataset ID",
+          "type": "STRING",
+          "optional": true
+        },
+        "licenses": {
+          "name": "Licenses",
+          "type": "ARRAY",
+          "componentType": "STRING",
+          "optional": false
+        },
+        "max_leaf_texture_resolution": {
+          "name": "Max Leaf Texture Resolution",
+          "type": "FLOAT32",
+          "optional": true,
+          "semantic": "MAXAR_MAX_LEAF_TEXTURE_RESOLUTION"
+        },
+        "min_leaf_texture_resolution": {
+          "name": "Min Leaf Texture Resolution",
+          "type": "FLOAT32",
+          "optional": true,
+          "semantic": "MAXAR_MIN_LEAF_TEXTURE_RESOLUTION"
+        },
+        "ortho_texture_features": {
+          "type": "ARRAY",
+          "componentType": "STRING",
+          "optional": true
+        },
+        "point_of_contact": {
+          "name": "Point-of-contact",
+          "type": "STRING",
+          "optional": true
+        },
+        "provider": {
+          "name": "Provider identifier",
+          "type": "STRING",
+          "optional": true
+        },
+        "reference_epoch": {
+          "name": "Reference Epoch",
+          "type": "STRING",
+          "default": "2005.0",
+          "optional": true,
+          "semantic": "TILESET_CRS_COORDINATE_EPOCH"
+        },
+        "reference_system": {
+          "name": "Reference System",
+          "type": "STRING",
+          "default": "EPSG:7664",
+          "optional": true,
+          "semantic": "TILESET_CRS_GEOCENTRIC"
+        },
+        "runtime_enabled": {
+          "name": "Runtime enabled dataset",
+          "type": "BOOLEAN",
+          "default": false,
+          "optional": true
+        },
+        "schema": {
+          "name": "WFF Schema identifier",
+          "type": "STRING",
+          "optional": true
+        },
+        "security": {
+          "name": "Security level",
+          "type": "STRING",
+          "default": "UNDECLARED",
+          "optional": true
+        },
+        "source_ids": {
+          "name": "Source ID's",
+          "type": "ARRAY",
+          "componentType": "STRING",
+          "optional": true
+        },
+        "texture_features": {
+          "type": "ARRAY",
+          "componentType": "STRING",
+          "optional": true
+        },
+        "wff_version": {
+          "name": "WFF version",
+          "type": "STRING",
+          "optional": false
+        }
+      }
+    }
+  }
+}

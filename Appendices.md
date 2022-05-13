@@ -21,7 +21,12 @@
 | R | Cesium_3D_metadata_specification-1.0.0.pdf | 1.0.0 |
 | S | Cesium_Metadata_Semantics_Reference-1.0.0.pdf | 1.0.0 |
 | T | rfc8478-Zstandard_format.pdf | October, 2018 |
-| U | 3D Tiles Archive Format MediaType Registration.pdf | February, 2021 |
+| U | 3D Tiles Archive Format MediaType Registration.pdf | February 1, 2022 |
 | V | MAXAR_content_3tz-1.0.0.pdf | 1.0.0 |
 | W | glTF_extensions_2.0_AGI_articulations.pdf | February, 2019 |
 | X | glTF_extensions_2.0_MAXAR_collision_geometry.pdf | November 18, 2021 |
+| Y | glTF_extensions_2.0_KHR_lights_punctual.pdf | October 25, 2021 |
+| Z | glTF_extensions_2.0_KHR_mesh_quantization.pdf | October 25, 2021 |
+| AA | NGA_STND_0046_10_2021_08_26_GPM_v1_1_clean.pdf | August 26, 2021 |
+| AB | [TerrainPack1.4.manifest.schema.json](TerrainPack1.4.manifest.schema.json) | May 13, 2022 |
+| AC | [WFF1.4.metadata.schema.json](WFF1.4.metadata.schema.json) | May 13, 2022 |
