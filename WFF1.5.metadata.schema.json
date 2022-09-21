@@ -1,34 +1,34 @@
 {
-  "name": "WFF 1.4 Metadata Schema",
+  "name": "WFF 1.5 Metadata Schema",
   "classes": {
     "tile": {
       "properties": {
-        "gpm::adjustment_params": {
-          "name": "Possible adjustment to gpm::position",
-          "type": "ARRAY",
+        "gpm_adjustment_params": {
+          "name": "Possible adjustment to gpm_position",
+          "type": "VEC3",
           "componentType": "FLOAT64",
           "componentCount": 3,
           "default": [0, 0, 0],
           "optional": true,
           "semantic": "GPM_ADJUSTMENT_PARAMS"
         },
-        "gpm::covariance_matrix": {
-          "name": "The predicted accuracy of the surface at the point described by gpm:position",
-          "type": "ARRAY",
+        "gpm_covariance_matrix": {
+          "name": "The predicted accuracy of the surface at the point described by gpm_position",
+          "type": "MAT3",
           "componentType": "FLOAT64",
           "componentCount": 9,
           "optional": true,
           "semantic": "GPM_COVARIANCE_MATRIX"
         },
-        "gpm::id": {
+        "gpm_id": {
           "name": "A unique identifier for the provided gpm triplet of data",
           "type": "STRING",
           "optional": true,
           "semantic": "ID"
         },
-        "gpm::position": {
+        "gpm_position": {
           "name": "The position of the anchor point",
-          "type": "ARRAY",
+          "type": "VEC3",
           "componentType": "FLOAT64",
           "componentCount": 3,
           "optional": true,
@@ -36,19 +36,22 @@
         },
         "max_height": {
           "name": "Maximum Tile Height",
-          "type": "FLOAT32",
+          "type": "SCALAR"
+          "componentType": "FLOAT32",
           "optional": true,
           "semantic": "TILE_MAXIMUM_HEIGHT"
         },
         "min_height": {
           "name": "Minimum Tile Height",
-          "type": "FLOAT32",
+          "type": "SCALAR"
+          "componentType": "FLOAT32",
           "optional": true,
           "semantic": "TILE_MINIMUM_HEIGHT"
         },
         "texture_resolution": {
           "name": "Estimated Texture Resolution",
-          "type": "FLOAT32",
+          "type": "SCALAR"
+          "componentType": "FLOAT32",
           "optional": true,
           "semantic": "MAXAR_TEXTURE_RESOLUTION"
         },
@@ -105,23 +108,25 @@
           "default": "SURFACE",
           "optional": true
         },
-        "gpm::interp_params": {
+        "gpm_interp_params": {
           "name": "GPM Interpolation parameters",
-          "type": "ARRAY",
+          "type": "SCALAR",
           "componentType": "FLOAT64",
-          "componentCount": 2,
+          "array": true,
+          "count": 2,
           "optional": true,
           "semantic": "GPM_INTERP_PARAMS"
         },
-        "gpm::spdcf_params": {
+        "gpm_spdcf_params": {
           "name": "GPM SPDCF function parameters",
-          "type": "ARRAY",
+          "type": "SCALAR",
           "componentType": "FLOAT64",
-          "componentCount": 4,
+          "array": true,
+          "count": 4,
           "optional": true,
           "semantic": "GPM_SPDCF_PARAMS"
         },
-        "gpm::version": {
+        "gpm_version": {
           "name": "GPM version",
           "type": "STRING",
           "optional": true
@@ -133,25 +138,31 @@
         },
         "licenses": {
           "name": "Licenses",
-          "type": "ARRAY",
-          "componentType": "STRING",
+          "type": "STRING",
+          "array": true,
           "optional": false
         },
         "max_leaf_texture_resolution": {
           "name": "Max Leaf Texture Resolution",
-          "type": "FLOAT32",
+          "type": "FLOAT64",
           "optional": true,
           "semantic": "MAXAR_MAX_LEAF_TEXTURE_RESOLUTION"
         },
         "min_leaf_texture_resolution": {
           "name": "Min Leaf Texture Resolution",
-          "type": "FLOAT32",
+          "type": "FLOAT64",
           "optional": true,
           "semantic": "MAXAR_MIN_LEAF_TEXTURE_RESOLUTION"
         },
+        "name": {
+          "name": "Name",
+          "type": "STRING",
+          "required": false,
+          "semantic": "NAME"
+        },
         "ortho_texture_features": {
-          "type": "ARRAY",
-          "componentType": "STRING",
+          "type": "STRING",
+          "array": true
           "optional": true
         },
         "point_of_contact": {
@@ -197,14 +208,15 @@
         },
         "source_ids": {
           "name": "Source ID's",
-          "type": "ARRAY",
-          "componentType": "STRING",
+          "type": "STRING",
+          "array": true,
           "optional": true
         },
         "texture_features": {
-          "type": "ARRAY",
-          "componentType": "STRING",
+          "type": "STRING",
+          "array": true,
           "optional": true
+
         },
         "wff_version": {
           "name": "WFF version",
