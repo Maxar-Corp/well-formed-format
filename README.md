@@ -16,6 +16,7 @@ The specification includes:
 | 1.3     | D        | 2021-11-18 |
 | 1.4     | E        | 2022-05-13 |
 | 1.5     | F        | 2022-09-21 |
+| 1.6     | G        | 2023-03-30 |
 
 ## Appendices
 

@@ -1,38 +1,73 @@
 {
-  "name": "WFF 1.5 Metadata Schema",
+  "name": "WFF 1.6 Metadata Schema",
   "classes": {
     "tile": {
       "properties": {
-        "gpm_adjustment_params": {
-          "name": "Possible adjustment to gpm_position",
+        "mpa_adjustment_params": {
+          "name": "Possible adjustment to mpa_position",
           "type": "VEC3",
           "componentType": "FLOAT64",
           "componentCount": 3,
           "default": [0, 0, 0],
           "optional": true,
-          "semantic": "GPM_ADJUSTMENT_PARAMS"
+          "semantic": "MPA_ADJUSTMENT_PARAMS"
         },
-        "gpm_covariance_matrix": {
-          "name": "The predicted accuracy of the surface at the point described by gpm_position",
+        "mpa_adjustment_params_array": {
+          "name": "A possible adjustment to each element in mpa_position_array",
+          "type": "VEC3",
+          "componentType": "FLOAT64",
+          "componentCount": 3,
+          "array": true,
+          "default": [],
+          "optional": true,
+          "semantic": "MPA_ADJUSTMENT_PARAMS_ARRAY"
+        },
+        "mpa_covariance_matrix": {
+          "name": "The predicted accuracy of the surface at the point described by mpa_position",
           "type": "MAT3",
           "componentType": "FLOAT64",
           "componentCount": 9,
           "optional": true,
-          "semantic": "GPM_COVARIANCE_MATRIX"
+          "semantic": "MPA_COVARIANCE_MATRIX"
         },
-        "gpm_id": {
+        "mpa_covariance_matrix_array": {
+          "name": "The predicted accuracy of the surface at the points described by mpa_position_array",
+          "type": "MAT3",
+          "componentType": "FLOAT64",
+          "componentCount": 9,
+          "array": true,
+          "optional": true,
+          "semantic": "MPA_COVARIANCE_MATRIX"
+        },
+        "mpa_id": {
           "name": "A unique identifier for the provided gpm triplet of data",
           "type": "STRING",
           "optional": true,
           "semantic": "ID"
         },
-        "gpm_position": {
+        "mpa_id_array": {
+          "name": "An array of unique identifier for each of the provided triplets of data, i.e. mpa_adjustment_parameters_array, mpa_covariance_matrix_array and mpa_position_array",
+          "type": "STRING",
+          "array": true,
+          "optional": true,
+          "semantic": "ID"
+        },
+        "mpa_position": {
           "name": "The position of the anchor point",
           "type": "VEC3",
           "componentType": "FLOAT64",
           "componentCount": 3,
           "optional": true,
-          "semantic": "GPM_POSITION"
+          "semantic": "MPA_POSITION"
+        },
+        "mpa_position_array": {
+          "name": "The position of the anchor point",
+          "type": "VEC3",
+          "componentType": "FLOAT64",
+          "componentCount": 3,
+          "array": true,
+          "optional": true,
+          "semantic": "MPA_POSITION"
         },
         "max_height": {
           "name": "Maximum Tile Height",
@@ -108,25 +143,25 @@
           "default": "SURFACE",
           "optional": true
         },
-        "gpm_interp_params": {
+        "mpa_interp_params": {
           "name": "GPM Interpolation parameters",
           "type": "SCALAR",
           "componentType": "FLOAT64",
           "array": true,
           "count": 2,
           "optional": true,
-          "semantic": "GPM_INTERP_PARAMS"
+          "semantic": "MPA_INTERP_PARAMS"
         },
-        "gpm_spdcf_params": {
+        "mpa_spdcf_params": {
           "name": "GPM SPDCF function parameters",
           "type": "SCALAR",
           "componentType": "FLOAT64",
           "array": true,
           "count": 4,
           "optional": true,
-          "semantic": "GPM_SPDCF_PARAMS"
+          "semantic": "MPA_SPDCF_PARAMS"
         },
-        "gpm_version": {
+        "mpa_version": {
           "name": "GPM version",
           "type": "STRING",
           "optional": true
@@ -216,7 +251,6 @@
           "type": "STRING",
           "array": true,
           "optional": true
-
         },
         "wff_version": {
           "name": "WFF version",
