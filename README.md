@@ -23,3 +23,7 @@ The specification includes:
 ## Appendices
 
 * [Appendices](Appendices.md)
+
+## Errata
+
+* [Errata](Errata.md)
