@@ -17,12 +17,12 @@
 | M | [rfc7946-GeoJSON](https://datatracker.ietf.org/doc/html/rfc7946) | August, 2016 |
 | N | [3DTILES_bounding_volume_S2](https://github.com/CesiumGS/3d-tiles/tree/main/extensions/3DTILES_bounding_volume_S2) | March 16, 2022 |
 | O | [3DTILES_content_gltf](https://github.com/CesiumGS/3d-tiles/tree/main/extensions/3DTILES_content_gltf) | June 22, 2022 |
-| P | [MAXAR_content_3tz](https://github.com/Maxar-Corp/3d-tiles/tree/wff1.6.2/extensions/MAXAR_content_3tz) | November 16, 2021 |
-| Q | [MAXAR_content_geojson](https://github.com/Maxar-Corp/3d-tiles/tree/wff1.6.2/extensions/MAXAR_content_geojson) | March 17, 2023 |
-| R | [MAXAR_extent](https://github.com/Maxar-Corp/3d-tiles/tree/wff1.6.2/extensions/MAXAR_extent) | October 12, 2020 |
-| S | [MAXAR_grid](https://github.com/Maxar-Corp/3d-tiles/tree/wff1.6.2/extensions/MAXAR_grid) | March 30, 2023 |
-| T | [VRICON_class](https://github.com/Maxar-Corp/3d-tiles/tree/wff1.6.2/extensions/VRICON_class) | September 8, 2022 |
-| U | [VRICON_grid](https://github.com/Maxar-Corp/3d-tiles/tree/wff1.6.2/extensions/VRICON_grid) | August 14, 2022 |
+| P | [MAXAR_content_3tz](https://github.com/Maxar-Corp/3d-tiles/tree/wff1.6.3/extensions/MAXAR_content_3tz) | November 16, 2021 |
+| Q | [MAXAR_content_geojson](https://github.com/Maxar-Corp/3d-tiles/tree/wff1.6.3/extensions/MAXAR_content_geojson) | March 17, 2023 |
+| R | [MAXAR_extent](https://github.com/Maxar-Corp/3d-tiles/tree/wff1.6.3/extensions/MAXAR_extent) | October 12, 2020 |
+| S | [MAXAR_grid](https://github.com/Maxar-Corp/3d-tiles/tree/wff1.6.3/extensions/MAXAR_grid) | March 30, 2023 |
+| T | [VRICON_class](https://github.com/Maxar-Corp/3d-tiles/tree/wff1.6.3/extensions/VRICON_class) | September 8, 2022 |
+| U | [VRICON_grid](https://github.com/Maxar-Corp/3d-tiles/tree/wff1.6.3/extensions/VRICON_grid) | August 14, 2022 |
 | V | [AGI_articulations](https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Vendor/AGI_articulations) | February 5, 2019 |
 | W | [EXT_mesh_features](https://github.com/CesiumGS/glTF/tree/3d-tiles-next/extensions/2.0/Vendor/EXT_mesh_features) | March 13, 2022 |
 | X | [EXT_meshopt_compression](https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Vendor/EXT_meshopt_compression) | September 24, 2021 |
@@ -33,8 +33,8 @@
 | CC | [KHR_texture_basisu](https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Khronos/KHR_texture_basisu) | October 25, 2021 |
 | DD | [KHR_texture_transform](https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Khronos/KHR_texture_transform) | February, 2021 |
 | EE | [KHR_materials_variants](https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Khronos/KHR_materials_variants) | Jun 27, 2022 |
-| FF | [MAXAR_collision_geometry](https://github.com/Maxar-Corp/glTF/tree/wff1.6.2/extensions/2.0/Vendor/MAXAR_collision_geometry) | November 8, 2021 |
-| GG | [MAXAR_mesh_variants](https://github.com/Maxar-Corp/glTF/tree/wff1.6.2/extensions/2.0/Vendor/MAXAR_mesh_variants) | November 18, 2021 |
-| HH | [MAXAR_nonvisual_geometry](https://github.com/Maxar-Corp/glTF/tree/wff1.6.2/extensions/2.0/Vendor/MAXAR_nonvisual_geometry) | August, 2023 |
-| II | [MAXAR_image_ortho](https://github.com/Maxar-Corp/glTF/tree/wff1.6.2/extensions/2.0/Vendor/MAXAR_image_ortho) | March 30, 2023 |
-| JJ | [MAXAR_temporal_light_traits](https://github.com/Maxar-Corp/glTF/tree/wff1.6.2/extensions/2.0/Vendor/MAXAR_temporal_light_traits) | April 26, 2023 |
+| FF | [MAXAR_collision_geometry](https://github.com/Maxar-Corp/glTF/tree/wff1.6.3/extensions/2.0/Vendor/MAXAR_collision_geometry) | November 8, 2021 |
+| GG | [MAXAR_mesh_variants](https://github.com/Maxar-Corp/glTF/tree/wff1.6.3/extensions/2.0/Vendor/MAXAR_mesh_variants) | November 18, 2021 |
+| HH | [MAXAR_nonvisual_geometry](https://github.com/Maxar-Corp/glTF/tree/wff1.6.3/extensions/2.0/Vendor/MAXAR_nonvisual_geometry) | August, 2023 |
+| II | [MAXAR_image_ortho](https://github.com/Maxar-Corp/glTF/tree/wff1.6.3/extensions/2.0/Vendor/MAXAR_image_ortho) | February 19, 2024 |
+| JJ | [MAXAR_temporal_light_traits](https://github.com/Maxar-Corp/glTF/tree/wff1.6.3/extensions/2.0/Vendor/MAXAR_temporal_light_traits) | April 26, 2023 |
